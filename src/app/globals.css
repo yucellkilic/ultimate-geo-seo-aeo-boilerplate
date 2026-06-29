@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-text: 0 0% 0%;
+  --color-bg: 0 0% 100%;
+  --color-primary: 199 89% 48%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: 0 0% 100%;
+    --color-bg: 0 0% 3%;
+    --color-primary: 199 89% 48%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
